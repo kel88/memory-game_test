@@ -1,29 +1,19 @@
 
 var cards = ["queen", "queen", "king", "king"];
 var cardsInPlay = [];
-
-var cardOne = [0];
-var cardTwo = [1];
-var cardThree = [2];
-var cardFour = [3];
-
-//Now we'll want to add this second card to the cardsInPlay array.
-cardsInPlay.push('cardOne', 'cardTwo');
-cardsInPlay;
-
-
-console.log("User flipped queen");
-console.log ("User flipped king");
-
-//Now we'll want to add logic that checks for equality between the two cards in the cardsInPlay array.
-//If values are equal, execute an alert with the message "You found a match!"
-//If values are not equal, execute an alert with the message "Sorry, try again."
-
-if (cardsInPlay.length === 2) {
-alert("You found a match!");
-if (cardsInPlay[0] = cardsInPlay[1]) {
-alert("Sorry, try again");
-}
-}
-
-
+var checkForMatch = function ();{
+  if (cardsInPlay [0] === cardsInPlay[1]){
+    console.log("You found a match!");
+  } else {
+    console.log("Sorry, try again.");
+  }
+};
+var flipCard = function ('cardId') {
+  console.log ("User flipped queen" + cards[cardId]);
+  console.log ("User flipped king" + cards[cardId]);
+      cardsInPlay.push(cards[cardId]);
+  if (cardsInPlay.lenght === 2) {
+    checkForMatch();
+  }};
+  flipCard (0);
+  flipCard (2);
